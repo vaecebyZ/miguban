@@ -9,7 +9,7 @@
         ref="loginForm"
         label-position="left"
       >
-        <h3 class="title">后台管理框架</h3>
+        <h3 class="title">MiguBan</h3>
         <el-form-item prop="username">
           <span class="svg-container svg-container_login">
             <svg-icon icon-class="user" />
@@ -135,7 +135,7 @@ $light_gray: #eee;
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url("https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg");
+  background-image: url("https://api.yimian.xyz/img?type=moe");
   background-position: center;
   ::v-deep .el-input {
     display: inline-block;

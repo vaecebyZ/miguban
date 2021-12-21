@@ -1,8 +1,8 @@
 {
-  "name": "electron-vue-admin",
+  "name": "miguban",
   "version": "0.0.1",
-  "author": "sky <https://github.com/umbrella22>",
-  "description": "An electron-vue project",
+  "author": "Sanka <https://github.com/vaecebyZ>",
+  "description": "just for test",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {

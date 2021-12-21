@@ -40,7 +40,25 @@ export default [
       component: () => import('@/components/LandingPage')
     }]
   },
-
+  {
+    path: '/tools',
+    component: Layout,
+    meta: { title: '工具箱', icon: 'form' },
+    children: [
+      {
+        path: 'index',
+        name: 'Form',
+        component: () => import('@/views/form/index'),
+        meta: { title: '表单', icon: 'form' }
+      },
+      {
+        path: 'index2',
+        name: 'Form2',
+        component: () => import('@/views/form/index'),
+        meta: { title: '表单2', icon: 'form' }
+      }
+    ]
+  },
   {
     path: '/form',
     component: Layout,

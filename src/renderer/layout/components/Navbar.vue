@@ -55,7 +55,8 @@ export default {
   },
   data: () => ({
     time: "",
-    userImage: require("@/assets/user.png"),
+    // userImage: require("@/assets/user.png"),
+    userImage:'https://api.yimian.xyz/img?type=head',
     isMac: process.platform === "darwin"
   }),
   mounted() {
