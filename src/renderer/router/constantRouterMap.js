@@ -25,9 +25,16 @@ const Notfound = () => import('@/views/404')
     icon: 'svg-name'             当你在svg文件夹内加入了你的图标,那么在这里填写图标名他就会显示在侧栏
   }
  **/
-export default [
-  { path: '/login', component: Login, hidden: true },
-  { path: '*', component: Notfound, hidden: true },
+export default [{
+    path: '/login',
+    component: Login,
+    hidden: true
+  },
+  {
+    path: '*',
+    component: Notfound,
+    hidden: true
+  },
   {
     path: '/',
     component: Layout,
@@ -43,64 +50,79 @@ export default [
   {
     path: '/tools',
     component: Layout,
-    meta: { title: '工具箱', icon: 'form' },
-    children: [
-      {
+    meta: {
+      title: '工具箱',
+      icon: 'form'
+    },
+    children: [{
         path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: '表单', icon: 'form' }
+        name: 'ChangeWallpaper',
+        component: () => import('@/views/tools/index'),
+        meta: {
+          title: '壁纸QAQ',
+          icon: 'form'
+        }
       },
       {
         path: 'index2',
-        name: 'Form2',
-        component: () => import('@/views/form/index'),
-        meta: { title: '表单2', icon: 'form' }
-      }
-    ]
-  },
-  {
-    path: '/form',
-    component: Layout,
-    meta: { title: '表单', icon: 'form' },
-    children: [
-      {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: '表单', icon: 'form' }
+        name: 'ChangeWallpaper2',
+        component: () => import('@/views/tools/index'),
+        meta: {
+          title: '开发中...',
+          icon: 'form'
+        }
       },
-      {
-        path: 'index2',
-        name: 'Form2',
-        component: () => import('@/views/form/index'),
-        meta: { title: '表单2', icon: 'form' }
-      }
+      // {
+      //   path: 'index2',
+      //   name: 'Form2',
+      //   component: () => import('@/views/form/index'),
+      //   meta: { title: '表单2', icon: 'form' }
+      // }
     ]
   },
-  {
-    path: '/table',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        name: '表格',
-        component: () => import('@/views/table/index'),
-        meta: { title: '表格', icon: 'table' }
-      }
-    ]
-  },
+  // {
+  //   path: '/form',
+  //   component: Layout,
+  //   meta: { title: '表单', icon: 'form' },
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: 'Form',
+  //       component: () => import('@/views/form/index'),
+  //       meta: { title: '表单', icon: 'form' }
+  //     },
+  //     {
+  //       path: 'index2',
+  //       name: 'Form2',
+  //       component: () => import('@/views/form/index'),
+  //       meta: { title: '表单2', icon: 'form' }
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: '/table',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       name: '表格',
+  //       component: () => import('@/views/table/index'),
+  //       meta: { title: '表格', icon: 'table' }
+  //     }
+  //   ]
+  // },
   {
     path: '/brower',
     component: Layout,
-    hidden: true,
-    children: [
-      {
-        path: 'index',
-        name: '文档',
-        component: () => import('@/views/brower/index'),
-        meta: { title: '文档', icon: 'table' }
+    // hidden: true,
+    children: [{
+      path: 'index',
+      name: '文档',
+      component: () => import('@/views/brower/index'),
+      meta: {
+        title: '文档',
+        icon: 'table'
       }
-    ]
+    }]
   }
 ]

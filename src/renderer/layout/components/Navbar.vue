@@ -21,7 +21,7 @@
                 </div>
               </el-image>
               <div class="el-dropdown-link">
-               尊敬的： {{name}}
+                {{name}}
                 <i class="el-icon-arrow-down el-icon--right"></i>
               </div>
             </div>

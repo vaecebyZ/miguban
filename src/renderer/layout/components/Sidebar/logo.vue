@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: "logo名称",
+      title: "MiguBan",
     };
   }
 };
